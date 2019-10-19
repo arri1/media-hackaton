@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "offer",
+  "info": {
+    "name": "offer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "order": {
+      "model": "order",
+      "via": "offers"
+    },
+    "geoLocation": {
+      "type": "json"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

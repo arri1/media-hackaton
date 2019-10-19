@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/orders": {
+    "/offers": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Order"
+                    "$ref": "#/components/schemas/Offer"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "parameters": [
           {
@@ -195,7 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Offer"
                 }
               }
             }
@@ -233,7 +233,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "requestBody": {
           "description": "",
@@ -241,14 +241,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrder"
+                "$ref": "#/components/schemas/NewOffer"
               }
             }
           }
         }
       }
     },
-    "/orders/count": {
+    "/offers/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -300,12 +300,12 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "parameters": []
       }
     },
-    "/orders/{id}": {
+    "/offers/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -315,7 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Offer"
                 }
               }
             }
@@ -353,7 +353,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "parameters": [
           {
@@ -377,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Order"
+                  "$ref": "#/components/schemas/Offer"
                 }
               }
             }
@@ -415,7 +415,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "requestBody": {
           "description": "",
@@ -423,7 +423,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrder"
+                "$ref": "#/components/schemas/NewOffer"
               }
             }
           }
@@ -489,7 +489,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "Offer"
         ],
         "parameters": [
           {
@@ -508,7 +508,7 @@
   },
   "components": {
     "schemas": {
-      "Order": {
+      "Offer": {
         "required": [
           "id"
         ],
@@ -516,58 +516,95 @@
           "id": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
+          "media": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
           },
-          "taskText": {
-            "type": "string"
-          },
-          "geoLocation": {
-            "type": "object"
-          },
-          "offers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "media": {
-                  "type": "string"
-                },
-                "order": {
-                  "type": "string"
-                },
-                "geoLocation": {
-                  "type": "object"
-                },
-                "text": {
+          "order": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "taskText": {
+                "type": "string"
+              },
+              "geoLocation": {
+                "type": "object"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
               }
             }
+          },
+          "geoLocation": {
+            "type": "object"
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
-      "NewOrder": {
+      "NewOffer": {
         "properties": {
-          "name": {
-            "type": "string"
-          },
-          "taskText": {
+          "order": {
             "type": "string"
           },
           "geoLocation": {
             "type": "object"
           },
-          "offers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "text": {
+            "type": "string"
           }
         }
       }
@@ -575,7 +612,7 @@
   },
   "tags": [
     {
-      "name": "Order"
+      "name": "Offer"
     }
   ]
 }

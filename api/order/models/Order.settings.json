@@ -7,12 +7,25 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ],
     "comment": ""
   },
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "taskText": {
+      "type": "richtext"
+    },
+    "geoLocation": {
+      "type": "json"
+    },
+    "offers": {
+      "collection": "offer",
+      "via": "order"
     }
   }
 }
