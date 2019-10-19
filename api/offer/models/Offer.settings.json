@@ -17,15 +17,15 @@
       "via": "related",
       "plugin": "upload"
     },
-    "order": {
-      "model": "order",
-      "via": "offers"
-    },
     "geoLocation": {
       "type": "json"
     },
     "text": {
       "type": "richtext"
+    },
+    "order": {
+      "model": "order",
+      "via": "offers"
     }
   }
 }

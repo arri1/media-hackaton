@@ -26,6 +26,9 @@
     "offers": {
       "collection": "offer",
       "via": "order"
+    },
+    "status": {
+      "type": "boolean"
     }
   }
 }

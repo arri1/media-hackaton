@@ -562,6 +562,12 @@
               }
             }
           },
+          "geoLocation": {
+            "type": "object"
+          },
+          "text": {
+            "type": "string"
+          },
           "order": {
             "required": [
               "id"
@@ -584,26 +590,23 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "status": {
+                "type": "boolean"
               }
             }
-          },
-          "geoLocation": {
-            "type": "object"
-          },
-          "text": {
-            "type": "string"
           }
         }
       },
       "NewOffer": {
         "properties": {
-          "order": {
-            "type": "string"
-          },
           "geoLocation": {
             "type": "object"
           },
           "text": {
+            "type": "string"
+          },
+          "order": {
             "type": "string"
           }
         }
