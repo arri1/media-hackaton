@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2019 7:58:21 AM"
+    "x-generation-date": "10/20/2019 8:10:02 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3253,6 +3253,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "phone": {
+                "type": "string"
               }
             }
           }
@@ -3371,6 +3374,41 @@
           "type": {
             "type": "string"
           },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "type",
+                "controller",
+                "action",
+                "enabled"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "controller": {
+                  "type": "string"
+                },
+                "action": {
+                  "type": "string"
+                },
+                "enabled": {
+                  "type": "boolean"
+                },
+                "policy": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "users": {
             "type": "array",
             "items": {
@@ -3412,40 +3450,8 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              }
-            }
-          },
-          "permissions": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "type",
-                "controller",
-                "action",
-                "enabled"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
                 },
-                "type": {
-                  "type": "string"
-                },
-                "controller": {
-                  "type": "string"
-                },
-                "action": {
-                  "type": "string"
-                },
-                "enabled": {
-                  "type": "boolean"
-                },
-                "policy": {
-                  "type": "string"
-                },
-                "role": {
+                "phone": {
                   "type": "string"
                 }
               }
@@ -3468,13 +3474,13 @@
           "type": {
             "type": "string"
           },
-          "users": {
+          "permissions": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "permissions": {
+          "users": {
             "type": "array",
             "items": {
               "type": "string"
@@ -3529,13 +3535,13 @@
               "type": {
                 "type": "string"
               },
-              "users": {
+              "permissions": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "permissions": {
+              "users": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -3573,6 +3579,9 @@
                 }
               }
             }
+          },
+          "phone": {
+            "type": "string"
           }
         }
       },
@@ -3616,6 +3625,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "phone": {
+            "type": "string"
           }
         }
       },

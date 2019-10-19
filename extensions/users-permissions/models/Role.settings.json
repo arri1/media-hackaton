@@ -24,15 +24,13 @@
       "unique": true,
       "configurable": false
     },
-    "users": {
-      "collection": "user",
-      "via": "role",
-      "configurable": false,
-      "plugin": "users-permissions",
-      "isVirtual": true
-    },
     "permissions": {
       "collection": "permission",
+      "via": "role",
+      "plugin": "users-permissions"
+    },
+    "users": {
+      "collection": "user",
       "via": "role",
       "plugin": "users-permissions"
     }

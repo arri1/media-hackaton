@@ -1148,13 +1148,13 @@
               "type": {
                 "type": "string"
               },
-              "users": {
+              "permissions": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "permissions": {
+              "users": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -1192,6 +1192,9 @@
                 }
               }
             }
+          },
+          "phone": {
+            "type": "string"
           }
         }
       },
@@ -1235,6 +1238,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "phone": {
+            "type": "string"
           }
         }
       }

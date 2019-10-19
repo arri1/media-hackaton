@@ -532,6 +532,41 @@
           "type": {
             "type": "string"
           },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "type",
+                "controller",
+                "action",
+                "enabled"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "controller": {
+                  "type": "string"
+                },
+                "action": {
+                  "type": "string"
+                },
+                "enabled": {
+                  "type": "boolean"
+                },
+                "policy": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "users": {
             "type": "array",
             "items": {
@@ -573,40 +608,8 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              }
-            }
-          },
-          "permissions": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "type",
-                "controller",
-                "action",
-                "enabled"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
                 },
-                "type": {
-                  "type": "string"
-                },
-                "controller": {
-                  "type": "string"
-                },
-                "action": {
-                  "type": "string"
-                },
-                "enabled": {
-                  "type": "boolean"
-                },
-                "policy": {
-                  "type": "string"
-                },
-                "role": {
+                "phone": {
                   "type": "string"
                 }
               }
@@ -629,13 +632,13 @@
           "type": {
             "type": "string"
           },
-          "users": {
+          "permissions": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "permissions": {
+          "users": {
             "type": "array",
             "items": {
               "type": "string"
