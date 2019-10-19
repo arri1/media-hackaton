@@ -23,12 +23,12 @@
     "geoLocation": {
       "type": "json"
     },
+    "status": {
+      "type": "boolean"
+    },
     "offers": {
       "collection": "offer",
       "via": "order"
-    },
-    "status": {
-      "type": "boolean"
     }
   }
 }

@@ -26,6 +26,14 @@
     "order": {
       "model": "order",
       "via": "offers"
+    },
+    "title": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "offers",
+      "plugin": "users-permissions"
     }
   }
 }

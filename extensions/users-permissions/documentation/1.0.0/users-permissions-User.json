@@ -1161,6 +1161,37 @@
                 }
               }
             }
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "media": {
+                  "type": "string"
+                },
+                "geoLocation": {
+                  "type": "object"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1198,6 +1229,12 @@
           },
           "role": {
             "type": "string"
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

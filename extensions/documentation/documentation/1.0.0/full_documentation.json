@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2019 12:33:59 AM"
+    "x-generation-date": "10/20/2019 7:58:21 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3200,14 +3200,59 @@
               "geoLocation": {
                 "type": "object"
               },
+              "status": {
+                "type": "boolean"
+              },
               "offers": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "title": {
+            "type": "string"
+          },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
               },
-              "status": {
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
                 "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -3222,6 +3267,12 @@
             "type": "string"
           },
           "order": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           }
         }
@@ -3242,6 +3293,9 @@
           },
           "geoLocation": {
             "type": "object"
+          },
+          "status": {
+            "type": "boolean"
           },
           "offers": {
             "type": "array",
@@ -3264,12 +3318,15 @@
                 },
                 "order": {
                   "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "status": {
-            "type": "boolean"
           }
         }
       },
@@ -3284,14 +3341,14 @@
           "geoLocation": {
             "type": "object"
           },
+          "status": {
+            "type": "boolean"
+          },
           "offers": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "status": {
-            "type": "boolean"
           }
         }
       },
@@ -3349,6 +3406,12 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "offers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -3479,6 +3542,37 @@
                 }
               }
             }
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "media": {
+                  "type": "string"
+                },
+                "geoLocation": {
+                  "type": "object"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -3516,6 +3610,12 @@
           },
           "role": {
             "type": "string"
+          },
+          "offers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },

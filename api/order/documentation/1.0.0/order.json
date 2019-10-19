@@ -525,6 +525,9 @@
           "geoLocation": {
             "type": "object"
           },
+          "status": {
+            "type": "boolean"
+          },
           "offers": {
             "type": "array",
             "items": {
@@ -546,12 +549,15 @@
                 },
                 "order": {
                   "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "status": {
-            "type": "boolean"
           }
         }
       },
@@ -566,14 +572,14 @@
           "geoLocation": {
             "type": "object"
           },
+          "status": {
+            "type": "boolean"
+          },
           "offers": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "status": {
-            "type": "boolean"
           }
         }
       }

@@ -585,14 +585,59 @@
               "geoLocation": {
                 "type": "object"
               },
+              "status": {
+                "type": "boolean"
+              },
               "offers": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "title": {
+            "type": "string"
+          },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
               },
-              "status": {
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
                 "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -607,6 +652,12 @@
             "type": "string"
           },
           "order": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           }
         }
