@@ -56,12 +56,12 @@
       "plugin": "users-permissions",
       "configurable": false
     },
+    "phone": {
+      "type": "string"
+    },
     "offers": {
       "collection": "offer",
       "via": "user"
-    },
-    "phone": {
-      "type": "string"
     }
   }
 }

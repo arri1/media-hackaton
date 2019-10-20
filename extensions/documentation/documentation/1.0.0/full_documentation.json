@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2019 8:10:02 AM"
+    "x-generation-date": "10/20/2019 8:59:24 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3132,48 +3132,51 @@
             "type": "string"
           },
           "media": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -3248,14 +3251,14 @@
               "role": {
                 "type": "string"
               },
+              "phone": {
+                "type": "string"
+              },
               "offers": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "phone": {
-                "type": "string"
               }
             }
           }
@@ -3311,7 +3314,10 @@
                   "type": "string"
                 },
                 "media": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "geoLocation": {
                   "type": "object"
@@ -3445,14 +3451,14 @@
                 "role": {
                   "type": "string"
                 },
+                "phone": {
+                  "type": "string"
+                },
                 "offers": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "phone": {
-                  "type": "string"
                 }
               }
             }
@@ -3549,6 +3555,9 @@
               }
             }
           },
+          "phone": {
+            "type": "string"
+          },
           "offers": {
             "type": "array",
             "items": {
@@ -3560,7 +3569,10 @@
                   "type": "string"
                 },
                 "media": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "geoLocation": {
                   "type": "object"
@@ -3579,9 +3591,6 @@
                 }
               }
             }
-          },
-          "phone": {
-            "type": "string"
           }
         }
       },
@@ -3620,14 +3629,14 @@
           "role": {
             "type": "string"
           },
+          "phone": {
+            "type": "string"
+          },
           "offers": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "phone": {
-            "type": "string"
           }
         }
       },

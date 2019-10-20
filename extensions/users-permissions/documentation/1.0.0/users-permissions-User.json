@@ -1162,6 +1162,9 @@
               }
             }
           },
+          "phone": {
+            "type": "string"
+          },
           "offers": {
             "type": "array",
             "items": {
@@ -1173,7 +1176,10 @@
                   "type": "string"
                 },
                 "media": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "geoLocation": {
                   "type": "object"
@@ -1192,9 +1198,6 @@
                 }
               }
             }
-          },
-          "phone": {
-            "type": "string"
           }
         }
       },
@@ -1233,14 +1236,14 @@
           "role": {
             "type": "string"
           },
+          "phone": {
+            "type": "string"
+          },
           "offers": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "phone": {
-            "type": "string"
           }
         }
       }

@@ -539,7 +539,10 @@
                   "type": "string"
                 },
                 "media": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "geoLocation": {
                   "type": "object"

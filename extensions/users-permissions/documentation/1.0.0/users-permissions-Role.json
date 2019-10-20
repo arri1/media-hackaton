@@ -603,14 +603,14 @@
                 "role": {
                   "type": "string"
                 },
+                "phone": {
+                  "type": "string"
+                },
                 "offers": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "phone": {
-                  "type": "string"
                 }
               }
             }
