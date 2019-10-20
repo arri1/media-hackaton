@@ -26,14 +26,12 @@
     "status": {
       "type": "boolean"
     },
+    "image": {
+      "type": "string"
+    },
     "offers": {
       "collection": "offer",
       "via": "order"
-    },
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
     }
   }
 }

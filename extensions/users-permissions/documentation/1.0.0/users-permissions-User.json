@@ -1175,12 +1175,6 @@
                 "id": {
                   "type": "string"
                 },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "geoLocation": {
                   "type": "object"
                 },
@@ -1195,6 +1189,9 @@
                 },
                 "order": {
                   "type": "string"
+                },
+                "images": {
+                  "type": "object"
                 }
               }
             }

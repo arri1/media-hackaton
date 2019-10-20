@@ -12,11 +12,6 @@
     ]
   },
   "attributes": {
-    "media": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "geoLocation": {
       "type": "json"
     },
@@ -34,6 +29,9 @@
     "order": {
       "model": "order",
       "via": "offers"
+    },
+    "images": {
+      "type": "json"
     }
   }
 }
