@@ -571,34 +571,6 @@
           "text": {
             "type": "string"
           },
-          "order": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "taskText": {
-                "type": "string"
-              },
-              "geoLocation": {
-                "type": "object"
-              },
-              "status": {
-                "type": "boolean"
-              },
-              "offers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "title": {
             "type": "string"
           },
@@ -646,6 +618,37 @@
                 }
               }
             }
+          },
+          "order": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "taskText": {
+                "type": "string"
+              },
+              "geoLocation": {
+                "type": "object"
+              },
+              "status": {
+                "type": "boolean"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Image": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -657,13 +660,13 @@
           "text": {
             "type": "string"
           },
-          "order": {
-            "type": "string"
-          },
           "title": {
             "type": "string"
           },
           "user": {
+            "type": "string"
+          },
+          "order": {
             "type": "string"
           }
         }

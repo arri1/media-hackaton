@@ -1187,13 +1187,13 @@
                 "text": {
                   "type": "string"
                 },
-                "order": {
-                  "type": "string"
-                },
                 "title": {
                   "type": "string"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "order": {
                   "type": "string"
                 }
               }

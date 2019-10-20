@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2019 8:59:24 AM"
+    "x-generation-date": "10/20/2019 12:08:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3186,34 +3186,6 @@
           "text": {
             "type": "string"
           },
-          "order": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "taskText": {
-                "type": "string"
-              },
-              "geoLocation": {
-                "type": "object"
-              },
-              "status": {
-                "type": "boolean"
-              },
-              "offers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "title": {
             "type": "string"
           },
@@ -3261,6 +3233,37 @@
                 }
               }
             }
+          },
+          "order": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "taskText": {
+                "type": "string"
+              },
+              "geoLocation": {
+                "type": "object"
+              },
+              "status": {
+                "type": "boolean"
+              },
+              "offers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Image": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -3272,13 +3275,13 @@
           "text": {
             "type": "string"
           },
-          "order": {
-            "type": "string"
-          },
           "title": {
             "type": "string"
           },
           "user": {
+            "type": "string"
+          },
+          "order": {
             "type": "string"
           }
         }
@@ -3325,15 +3328,61 @@
                 "text": {
                   "type": "string"
                 },
-                "order": {
-                  "type": "string"
-                },
                 "title": {
                   "type": "string"
                 },
                 "user": {
                   "type": "string"
+                },
+                "order": {
+                  "type": "string"
                 }
+              }
+            }
+          },
+          "Image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
               }
             }
           }
@@ -3580,13 +3629,13 @@
                 "text": {
                   "type": "string"
                 },
-                "order": {
-                  "type": "string"
-                },
                 "title": {
                   "type": "string"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "order": {
                   "type": "string"
                 }
               }

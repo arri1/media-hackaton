@@ -29,6 +29,11 @@
     "offers": {
       "collection": "offer",
       "via": "order"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
